@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1>这下</h1>
+    <router-link to="/pvr">Vue响应性原理</router-link>
+    <br><br>
+    <el-button type="primary" @click="backHome">首页</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
-<script>
-import {Vue} from "vue-class-component";
+<script >
 import {defineComponent} from "vue";
 
 //定义组件，可以export default {}，页面出得来，但是有点小low。
@@ -19,8 +21,18 @@ import {defineComponent} from "vue";
 //或返回defineComponent()
 
 export default defineComponent({
+  data() {
+    return {
+      val1: 2,
+      val2: 3
+    }
+  },
   methods: {
-
+    backHome() {
+      if (this.$route.path !== '/'){
+        this.$router.push('/')
+      }
+    }
   }
 })
 
