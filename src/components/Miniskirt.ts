@@ -25,9 +25,6 @@ export const Home = defineComponent({
             return this.val1 + this.val2
         }
     },
-    mounted() {
-
-    }
 })
 export class PVR extends Vue{
 
