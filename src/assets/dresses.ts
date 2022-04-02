@@ -22,6 +22,9 @@ const dr6 = new Dress('奶油安纳西',169, 'slip dress', '蝴蝶结碎花杏�
 
 let dressList: Dress[] = [dr1, dr2, dr3, dr4, dr5, dr6]
 
-export function getDresses() {
+export function getDresses(ownerName: string | undefined) {
+    if (ownerName === undefined){
+        ownerName = '薇儿'
+    }
     return dressList
 }

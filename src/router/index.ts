@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/compositive-api/:owner', //getDressList
+    path: '/compositive-api/:ownerName', //getDressList
     props: true, //当 props 设置为 true 时，route.params 将被设置为组件的 props。
     name: 'compositive-api',
     component: CompositiveApi
