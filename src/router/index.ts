@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import MyApp from "@/MyApp.vue";
 import {Home} from "@/components/Miniskirt";
 import CompositiveApi from '@/views/CompositiveApi.vue'
+import Teleport from '@/views/Teleport.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -27,6 +28,10 @@ const routes: Array<RouteRecordRaw> = [
     props: true, //当 props 设置为 true 时，route.params 将被设置为组件的 props。
     name: 'compositive-api',
     component: CompositiveApi
+  },
+  {
+    path: '/teleport',
+    component: Teleport
   }
 ]
 

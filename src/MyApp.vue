@@ -1,7 +1,8 @@
 <template>
   <div>
     <router-link to="/compositive-api/周薇儿">组合式API</router-link>&nbsp;&nbsp;
-    <router-link to="/compositive-api/周雨薇儿">组合式API2</router-link>
+    <router-link to="/compositive-api/周雨薇儿">组合式API2</router-link><br>
+    <router-link to="/teleport">心灵传输</router-link>
     <br><br>
     <el-button type="primary" @click="backHome">首页</el-button>
     <br><br>
